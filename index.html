@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>LinkedIn Home Page</title>
+    <link rel='stylesheet' href='style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src='mysrc.js'></script>
+
+</head>
+
+<body>
+    <div class="desktop">
+        <div class="topnav">
+            <a style="margin-left: 150px;" href="#home"><img src='images/linkedin.jpg' height=30px></a>
+            <input id="search" style="margin-top: 15px;height:30px;width:360px;border-radius:.5rem" type="search"
+                placeholder="Search.." value=''>
+            <div style="float: right;">
+                <ul style="display:inline;margin-left:230px">
+                    <li><a title=" Home"><i class="fa fa-home" style="font-size:29px;"></i></a></li>
+                    <li><a title="My Network"><img
+                                src="https://img.icons8.com/metro/26/000000/user-group-man-man.png" /></a>
+                    </li>
+                    <l><a title="Jobs"><img style="margin-top: 5px;"
+                                src="https://img.icons8.com/material/24/000000/find-matching-job--v1.png" /></a>
+                        </li>
+                        <li><a title='Message'><img style="margin-top: 5px;"
+                                    src="https://img.icons8.com/material/24/000000/chat--v1.png" /></a></li>
+                        <li><a title='Notifications'><img style="margin-top: 3px;"
+                                    src="https://img.icons8.com/material/24/000000/bell.png" /></a>
+                        </li>
+                        <li><a title='Profile'><img style="margin-top: 5px;" class="avt" src="Images/img_avatar.jpg"
+                                    alt="Avatar" height=24px></a></li>
+                        <li id="nav_drop"><a title='work'><img style="margin-top: 5px;"
+                                    src="https://img.icons8.com/material/24/000000/activity-grid-2.png" /></a>
+                            <div class="dropdown">
+                                <a href="#" style="width:160px;text-align:justify">Learning</a><br>
+                                <a href="#" style='width:160px;text-align:justify'>Insights</a><br>
+                                <a href='#' style='width:160px;text-align:justify'>Post a Job</a><br>
+                                <a href='#' style='width:160px;text-align:justify'>Advertise</a><br>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+        <div style="margin:5px 0px 0px 150px">
+            <div class="row">
+                <div class="col col1" style="border:.25rem solid #f2f2f2;height:876px;">
+                    <p></p>
+                </div>
+                <div class="col col2">
+                    <div style="border:.25rem solid #f2f2f2;">
+                        <p>Deepthi Nalluri,Sai Maheshwar Arva and 831 other connections follow LinkedIn <span
+                                style="float:right;padding-right:4px"><i class="fa fa-ellipsis-h"></i></span></p>
+                        <hr style="margin-top:-14px">
+                        <div>
+                            <img src="Images/linkedin.jpg" height=24px style="float: left;padding:10px">
+                            <ul>
+                                <li style="display: block;"><b>LinkedIn</b></li>
+                                <li style="display: block;color:gray"><small>12,107,982</small><strong><button
+                                            id='follow'
+                                            style="background-color:rgba(0, 0, 255, 0.267);float:right;margin-right:10px"
+                                            onclick="myfunction()">
+                                            Follow +</button></strong></li>
+                                <li style="display: block;color:gray"><small>Promoted</small></li>
+                            </ul>
+                            <p style="padding: 10px;">While many industries have been hit hard by Covid-19, some are on
+                                the
+                                rise.Here are top ten
+                                roles that are in demand today and the skills to help you land</p>
+                            <img src="Images/col2.jpg" width=100%>
+                            <img src="https://img.icons8.com/color/48/000000/facebook-like.png" height="24px" />
+                            <img src="https://img.icons8.com/color/48/000000/light.png" height='24px' />
+                            <img src="https://img.icons8.com/color/48/000000/hearts.png" height="24px" />
+                            <small style="display: inline;color:grey"><span id="comments">759</span> comments <span
+                                    id='likes'>14</span>
+                                likes</small>
+                            <hr style="margin-top:0px">
+                            <button onclick="mylikes()" id="btnlike" style="margin:2px;border: none;"><i
+                                    class="fa fa-thumbs-o-up" style="font-size:xx-large;"
+                                    aria-hidden="true"></i></button>
+                            <button style="border:none;margin:2px"><i class="fa fa-comment-o"
+                                    style="font-size:xx-large;" aria-hidden="true"></i></button>
+                            <button style="font-size:xx-large;border:none;margin:2px"><i class="fa fa-share"
+                                    aria-hidden="true"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div style="margin-top:15px;border:.25rem solid #f2f2f2">
+                        <img src="Images/img_avatar.jpg" height=24px style="margin-top:17px;float: left;padding:10px">
+                        <ul>
+                            <li style="display: block;"><b>Prashanth Juluru</b><span
+                                    style="float: right;padding-right:10px"><small><i class="fa
+                                    fa-ellipsis-h"></i></small></span></li>
+                            <li style="display: block;color:gray"><small>Student at VNRVJIET</small></li>
+                            <li style="display: block;color:gray"><small>3d</small></li>
+                        </ul>
+                        <p style="padding: 10px;">I want to learn about firebase?<br>Can anyone suggest the best website
+                            or
+                            youtube channel to start learning</p>
+                        <img src="https://img.icons8.com/color/48/000000/facebook-like.png" height="24px" />
+                        <small style="display: inline;color:grey">10 comments <span id='likes_2'>5</span> likes</small>
+                        <hr style="margin-top:0px">
+                        <button onclick="mylikes_2()" id="btnlike_2" style="margin:2px;border: none;"><i
+                                class="fa fa-thumbs-o-up" style="font-size:xx-large;" aria-hidden="true"></i></button>
+                        <button style="border:none;margin:2px"><i class="fa fa-comment-o" style="font-size:xx-large;"
+                                aria-hidden="true"></i></button>
+                        <button style="font-size:xx-large;border:none;margin:2px"><i class="fa fa-share"
+                                aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+
+                </div>
+                <div class="col col3" style="border:.25rem solid #f2f2f2;height:876px">
+                </div>
+            </div>
+        </div>
+        <a title='Back to Top' onclick="window.scrollTo(0,0)"
+            style="float:right;margin:10px;border:.5rem solid black"><i class="fa fa-arrow-up"
+                aria-hidden="true"></i></a>
+    </div>
+    <div id='mobile'>
+        <div style="background-color:#283EE8;">
+            <img class="avt" style="opacity:0.3;padding: 10px;" src="Images/img_avatar.jpg" height="44px" width=>
+            <i style="position:absolute;top:46px;left:46px" id="mob" class="fa fa-bars" aria-hidden="true">
+                <div id='mobnav' class="dropdown">
+                    <a href="#">My Connections</a>
+                    <a href="#">Jobs</a>
+                    <a href='#'>Notifications</a>
+
+                </div>
+            </i>
+            <span style="position: absolute;top:30px;margin-left:30px;display:inline;"><input class="Search"
+                    style="width: 300px;height:30px;border-radius:.5rem" type="search" placeholder="Search.."></span>
+            <i style="position: relative;top:26px;float:right;font-size:24px;margin-right:40px" class=" fa fa-comments"
+                aria-hidden="true"></i>
+        </div>
+        <p style="text-align: justify;padding:4px">Prashanth Juluru and Deepthi Nalluri and 31 others
+            have started a
+            course on
+            Machine Learning in Udemy and 160
+            others follow Udemy on LinkedIn</p>
+        <hr style="margin-top: -20px;">
+        <img src="Images/yoga day.jpg" height="50px" style="float: left;padding:10px">
+        <ul>
+            <li style="display: block;"><b>Interntional Yoga Day</b></li>
+            <li style="display: block;color:gray"><small>11,07,982</small></li>
+            <li style="display: block;color:gray"><small>Promoted</small></li>
+        </ul>
+        <hr>
+        <p style="padding: 5px;text-align:justify;">The International Day of Yoga has been celebrated annually on 21
+            June since 2015, following its inception in
+            the United Nations General Assembly in 2014. </p>
+        <img src="Images/yoga.jpg" style='margin-left:70px;' width=70% height=300px>
+        <br />
+        <br />
+        <img src="https://img.icons8.com/color/48/000000/facebook-like.png" height="24px" />
+        <img src="https://img.icons8.com/color/48/000000/light.png" height='24px' />
+        <img src="https://img.icons8.com/color/48/000000/hearts.png" height="24px" />
+        <small style="float:right;color:grey">1<span id='likes_3'>5</span> likes</small>
+
+        <hr style="margin-top:0px">
+        <button id='like3' onclick='myfunction3()' style="margin:2px;border: none;"><i class="fa fa-thumbs-o-up"
+                style="font-size:x-large;" aria-hidden="true"></i></button>
+        <button style="border:none;margin:2px"><i class="fa fa-comment-o" style="font-size:x-large;"
+                aria-hidden="true"></i></button>
+        <button style="font-size:x-large;border:none;margin:2px"><i class="fa fa-share" aria-hidden="true"></i>
+        </button>
+        <hr>
+        <img src="Images/img_avatar.jpg" height=24px style="margin-top:17px;float: left;padding:10px">
+        <ul>
+            <li style="display: block;"><b>Deepthi Nalluri</b><span style="float: right;padding-right:10px"><small><i
+                            class="fa
+                                    fa-ellipsis-h"></i></small></span></li>
+            <li style="display: block;color:gray"><small>Student at VNRVJIET</small></li>
+            <li style="display: block;color:gray"><small>1d</small></li>
+        </ul>
+        <p style="padding: 10px;">Want to learn django framework, can anyone suggest a course for me on Udemy??</p>
+        <img src="https://img.icons8.com/color/48/000000/facebook-like.png" height="24px" />
+        <small style="display: inline;color:grey">10 comments <span id='likes4'>5</span> likes</small>
+        <hr style="margin-top:0px">
+        <button onclick="mylikes_4()" id="btnlike_4" style="margin:2px;border: none;"><i class="fa fa-thumbs-o-up"
+                style="font-size:xx-large;" aria-hidden="true"></i></button>
+        <button style="border:none;margin:2px"><i class="fa fa-comment-o" style="font-size:xx-large;"
+                aria-hidden="true"></i></button>
+        <button style="font-size:xx-large;border:none;margin:2px"><i class="fa fa-share" aria-hidden="true"></i>
+        </button>
+        <div class="btm-nav" style="position:sticky;bottom:0;border:.5px solid #f2f2f2;background-color:#f2f2f2">
+            <a href='#'><img src=" https://img.icons8.com/android/24/000000/home.png" height=34px></a>
+            <a href="#"><img src="https://img.icons8.com/metro/26/000000/user-group-man-man.png" height=32px /></a>
+            <a href="#"><img src="https://img.icons8.com/cute-clipart/64/000000/plus.png" height=34px /></a>
+            <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/bell.png" height=34px /></a>
+            <a href="#"><img src="https://img.icons8.com/pastel-glyph/64/000000/suitcase.png" height=34px /></a>
+        </div>
+    </div>
+</body>
+
+</html>
