@@ -88,7 +88,7 @@ li{
     #mobile{
       display: none;
     }
-    @media (max-width:560px){
+    @media (max-width:760px){
       .desktop{
         display: none;
       }
@@ -129,25 +129,25 @@ li{
         color: orangered;
       }
       .first{
-        left:0%;
-        position: relative;
+        width:20%;
+        float: left;;
             }
       .second{
-        left:10%;
-        position: relative;
+        width:20%;
+        float: left;
       }
       .third{
-        left:30%;
-        position: relative;
+        width:20%;
+        float: left;
       }
       .fourth{
-        left:50%;
-        position: relative;
+        width:20%;
+        float: left;
         
       }
       .fifth{
-        left:70%;
-        position: relative;
+        width:20%;
+        float: left;  
       }
     }
     
