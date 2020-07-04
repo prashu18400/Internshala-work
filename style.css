@@ -88,7 +88,7 @@ li{
     #mobile{
       display: none;
     }
-    @media (max-width:760px){
+    @media (max-width:560px){
       .desktop{
         display: none;
       }
@@ -128,8 +128,26 @@ li{
       ::-webkit-input-placeholder{
         color: orangered;
       }
-      .btm-nav a{
-        margin-right: 5% ;
+      .first{
+        left:0%;
+        position: relative;
             }
+      .second{
+        left:10%;
+        position: relative;
+      }
+      .third{
+        left:30%;
+        position: relative;
+      }
+      .fourth{
+        left:50%;
+        position: relative;
+        
+      }
+      .fifth{
+        left:70%;
+        position: relative;
+      }
     }
     
